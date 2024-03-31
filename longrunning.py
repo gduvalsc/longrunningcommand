@@ -2,6 +2,7 @@ from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 import tempfile, os, inspect
+import pexpect
 def showcodeandrun(bloc):
     st.code(bloc)
     compiled_code = compile(bloc, "<string>", "exec")
